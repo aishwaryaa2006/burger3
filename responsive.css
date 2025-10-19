@@ -1,0 +1,151 @@
+@media (max-width: 768px){
+  body {
+    padding: 20px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .topbar {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    position: fixed;
+    top: 10%;
+    right: -250px; 
+    background-color: var(--brown);
+    height: fit-content;
+    width: 150px;
+    gap: 30px;
+    border-radius: 0;
+    padding: 20px 20px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    border-radius: 30px 0px 30px 30px;
+  }
+
+  nav ul.active {
+    right: 0;
+    margin-right: 20px;
+  }
+
+  .menu-btn.active i::before {
+    content: "\f00d"; 
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .hero-section{
+    margin-top: 2rem;
+  }
+
+  .hero-section button{
+    text-wrap: nowrap;
+  }
+
+  .main-section{
+    margin-top: 0;
+  }
+
+  .socials{
+    height: 600px;
+  }
+
+  .burger-img img{
+    width: 350px;
+    margin-right: 1rem;
+  }
+
+  .stroke-text, .solid-text{
+    font-size: 15rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 480px){
+  body {
+    padding: 20px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .topbar {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    position: fixed;
+    top: 10%;
+    right: -250px; 
+    background-color: var(--brown);
+    height: fit-content;
+    width: 150px;
+    gap: 30px;
+    border-radius: 0;
+    padding: 20px 20px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    border-radius: 30px 0px 30px 30px;
+  }
+
+  nav ul.active {
+    right: 0;
+    margin-right: 20px;
+  }
+
+  .menu-btn.active i::before {
+    content: "\f00d"; 
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .hero-section{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 5rem;
+  }
+
+  .line{
+    width: 20rem;
+    height: 1.5px;
+  }
+
+  .socials{
+    flex-direction: row;
+    height: 0;
+  }
+
+  .hero-section button{
+    transform: rotate(0deg);
+  }
+
+  .main-section{
+    margin-top: 0;
+  }
+
+  .burger-img img{
+    width: 300px;
+    margin-right: 3rem;
+  }
+
+  .stroke-text, .solid-text{
+    font-size: 12rem;
+    margin-left: 0;
+  }
+
+}

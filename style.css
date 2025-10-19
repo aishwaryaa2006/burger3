@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg: #FFF4E0;
+    --brown: #382005;
+    --yellow: #FFC71E;
+    --lilita: "Lilita One", sans-serif;
+    --poppins: "Poppins", sans-serif;
+}
+
+body{
+    padding: 40px 100px;
+    background-color: var(--bg);
+    font-family: var(--poppins);
+}
+
+.topbar {
+  display: none; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background: var(--brown);
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.topbar .logo-mobile img {
+  width: 40px;
+}
+
+.menu-btn {
+  font-size: 20px;
+  color: var(--yellow);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--brown);
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li img{
+    width: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--yellow);
+    font-weight: 400;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    height: 700px;
+}
+
+.line {
+  position: absolute;
+  width: 1.5px;
+  height: 100%;
+  background-color: #2d2d2d; 
+  z-index: 0;
+}
+
+.socials-bg{
+    background-color: var(--brown);
+    color: var(--yellow);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.hero-section button{
+    background-color: var(--brown);
+    color: var(--yellow);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+    transform: rotate(270deg);
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.solid-text{
+    font-family: var(--lilita);
+    color: var(--yellow);
+    font-size: 22rem;
+    position: relative;
+    line-height: 0.8;
+    margin-left: 5rem;
+    z-index: 0;
+    text-align: center;
+}
+
+.burger-img{
+    margin-top: 15px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 4rem;
+}
+
+.stroke-text{
+    font-family: var(--lilita);
+    color: var(--yellow);
+    font-size: 22rem;
+    position: absolute;
+    line-height: 0.8;
+    margin-left: 5rem;
+    z-index: 3;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--brown);
+    text-align: center;
+}
+
+
