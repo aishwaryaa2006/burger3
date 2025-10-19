@@ -65,10 +65,34 @@ nav ul li img{
     width: 30px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: var(--yellow);
-    font-weight: 400;
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: 400;
+  display: inline-block;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: white;
 }
 
 .hero-section{
@@ -106,6 +130,16 @@ nav ul li a{
     border-radius: 50%;
     font-size: 20px;
     z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.socials-bg:hover{
+    background-color: var(--yellow);
+    color: var(--brown);
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(255, 199, 30, 0.45),
+              0 0 10px rgba(255, 199, 30, 0.4);;
 }
 
 .hero-section button{
@@ -116,13 +150,22 @@ nav ul li a{
     padding: 10px 15px;
     border: none;
     transform: rotate(270deg);
+    transition: all 0.3s ease;
+}
+
+.hero-section button:hover{
+    background-color: var(--yellow);
+    color: var(--brown);
+    transform: scale(1.1) rotate(270deg);
+    box-shadow: 0 6px 18px rgba(255, 199, 30, 0.45),
+              0 0 10px rgba(255, 199, 30, 0.4);
 }
 
 .main-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .solid-text{
@@ -155,5 +198,31 @@ nav ul li a{
     -webkit-text-stroke: 2px var(--brown);
     text-align: center;
 }
+
+
+
+
+/* ---------- ANIMATIONS ---------- */
+
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.loaded nav ul li {
+  animation: fadeDown 0.8s ease forwards;
+}
+body.loaded nav ul li:nth-child(2) { animation-delay: 0.1s; }
+body.loaded nav ul li:nth-child(3) { animation-delay: 0.2s; }
+body.loaded nav ul li:nth-child(4) { animation-delay: 0.3s; }
+body.loaded nav ul li:nth-child(5) { animation-delay: 0.4s; }
+
 
 
