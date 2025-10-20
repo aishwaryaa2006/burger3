@@ -15,6 +15,7 @@ body{
     padding: 40px 100px;
     background-color: var(--bg);
     font-family: var(--poppins);
+    color: var(--brown);
 }
 
 .topbar {
@@ -96,133 +97,83 @@ nav ul li a:hover {
 }
 
 .hero-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
 }
 
-.socials{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
-    height: 700px;
+.sub-head{
+  font-family: 'Butterscotch', sans-serif;
+  color: var(--brown);
+  font-size: 30px;
 }
 
-.line {
-  position: absolute;
-  width: 1.5px;
-  height: 100%;
-  background-color: #2d2d2d; 
-  z-index: 0;
+.main-head{
+  font-family: var(--lilita);
+  color: var(--yellow);
+  font-size: 8rem;
+  line-height: 4.5rem;
 }
 
-.socials-bg{
-    background-color: var(--brown);
-    color: var(--yellow);
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 20px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.tagline{
+  color: var(--brown);
+  font-size: 20px;
 }
 
-.socials-bg:hover{
-    background-color: var(--yellow);
-    color: var(--brown);
-    transform: scale(1.1);
-    box-shadow: 0 6px 18px rgba(255, 199, 30, 0.45),
-              0 0 10px rgba(255, 199, 30, 0.4);;
+.paragraph{
+  font-size: 14px;
+  margin-top: 30px;
+  width: 30rem;
 }
 
-.hero-section button{
-    background-color: var(--brown);
-    color: var(--yellow);
-    font-weight: 600;
-    border-radius: 50px;
-    padding: 10px 15px;
-    border: none;
-    transform: rotate(270deg);
-    transition: all 0.3s ease;
-}
-
-.hero-section button:hover{
-    background-color: var(--yellow);
-    color: var(--brown);
-    transform: scale(1.1) rotate(270deg);
-    box-shadow: 0 6px 18px rgba(255, 199, 30, 0.45),
-              0 0 10px rgba(255, 199, 30, 0.4);
-}
-
-.main-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-.solid-text{
-    font-family: var(--lilita);
-    color: var(--yellow);
-    font-size: 22rem;
-    position: relative;
-    line-height: 0.8;
-    margin-left: 5rem;
-    z-index: 0;
-    text-align: center;
+.content-section button{
+  background-color: var(--brown);
+  color: var(--yellow);
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 10px;
+  border-radius: 10px 0px 10px 10px;
+  margin-top: 12px;
 }
 
 .burger-img{
-    margin-top: 15px;
-    position: absolute;
-    z-index: 2;
-    margin-left: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
-.stroke-text{
-    font-family: var(--lilita);
-    color: var(--yellow);
-    font-size: 22rem;
-    position: absolute;
-    line-height: 0.8;
-    margin-left: 5rem;
-    z-index: 3;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--brown);
-    text-align: center;
+.badge1{
+  background-color: var(--yellow);
+  color: var(--brown);
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.151);
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  top: 18%;
+  right: 9%;
+  z-index: -1;
 }
 
-
-
-
-/* ---------- ANIMATIONS ---------- */
-
-
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.badge2{
+  background-color: white;
+  color: var(--brown);
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.151);
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  top: 80%;
+  right: 37%;
+  z-index: 2;
 }
-
-body.loaded nav ul li {
-  animation: fadeDown 0.8s ease forwards;
-}
-body.loaded nav ul li:nth-child(2) { animation-delay: 0.1s; }
-body.loaded nav ul li:nth-child(3) { animation-delay: 0.2s; }
-body.loaded nav ul li:nth-child(4) { animation-delay: 0.3s; }
-body.loaded nav ul li:nth-child(5) { animation-delay: 0.4s; }
-
-
 

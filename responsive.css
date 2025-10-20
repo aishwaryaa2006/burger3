@@ -42,40 +42,51 @@
     display: none;
   }
 
-  .hero-section{
-    margin-top: 2rem;
-  }
+ .hero-section{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+ } 
 
-  .hero-section button{
-    text-wrap: nowrap;
-  }
+ .content-section{
+  text-align: center;
+ }
 
-  .hero-section button:hover{
-    transform: scale(1.1) rotate(0deg);
-}
+ .main-head{
+  line-height: 6rem;
+ }
 
-  .main-section{
-    margin-top: 0;
-  }
+ .tagline{
+  font-size: 19px;
+ }
 
-  .socials{
-    height: 600px;
-  }
+ .paragraph{
+  font-size: 15px;
+ }
 
-  .burger-img img{
-    width: 350px;
-    margin-right: 1rem;
-  }
+ .content-section button{
+  margin-top: 1.5rem;
+ }
 
-  .stroke-text, .solid-text{
-    font-size: 15rem;
-    margin-left: 2rem;
-  }
+ .burger-img{
+    left: 0;
+    margin-top: 70px;
+ }
+
+ .badge1{
+  top: 71%;
+ }
+
+ .badge2{
+  top: 1000px;
+  left: 10%;
+ }
+
 }
 
 @media (max-width: 480px){
   body {
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   nav {
@@ -91,7 +102,7 @@
     align-items: flex-start;
     justify-content: start;
     position: fixed;
-    top: 10%;
+    top: 12%;
     right: -250px; 
     background-color: var(--brown);
     height: fit-content;
@@ -117,39 +128,47 @@
     display: none;
   }
 
-  .hero-section{
+ .hero-section{
     flex-direction: column;
     justify-content: center;
-    margin-top: 6rem;
-    gap: 5rem;
-  }
+    margin-top: 3rem;
+ } 
 
-  .line{
-    width: 20rem;
-    height: 1.5px;
-  }
+ .content-section{
+  text-align: center;
+ }
 
-  .socials{
-    flex-direction: row;
-    height: 0;
-  }
+ .main-head{
+  font-size: 6rem;
+  line-height: 3rem;
+ }
 
-  .hero-section button{
-    transform: rotate(0deg);
-  }
+ .tagline{
+  font-size: 14.5px;
+ }
 
-  .main-section{
-    margin-top: 0;
-  }
+ .paragraph{
+  font-size: 12px;
+ }
 
-  .burger-img img{
-    width: 300px;
-    margin-right: 3rem;
-  }
+ .content-section button{
+  margin-top: 1.5rem;
+ }
 
-  .stroke-text, .solid-text{
-    font-size: 12rem;
-    margin-left: 0;
-  }
+ .burger-img{
+    left: 0;
+    margin-top: 70px;
+ }
+
+ .badge1{
+  font-size: 10px;
+  top: 65%;
+ }
+
+ .badge2{
+  font-size: 10px;
+  top: 830px;
+  left: 10%;
+ }
 
 }
