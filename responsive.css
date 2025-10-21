@@ -74,11 +74,11 @@
  }
 
  .badge1{
-  top: 71%;
+  top: 73%;
  }
 
  .badge2{
-  top: 1000px;
+  top: 1050px;
   left: 10%;
  }
 
@@ -148,6 +148,7 @@
  }
 
  .paragraph{
+  width: 20rem;
   font-size: 12px;
  }
 
@@ -160,14 +161,18 @@
     margin-top: 70px;
  }
 
+ .burger-img img{
+  width: 400px;
+ }
+
  .badge1{
   font-size: 10px;
-  top: 65%;
+  top: 67%;
  }
 
  .badge2{
   font-size: 10px;
-  top: 830px;
+  top: 880px;
   left: 10%;
  }
 
